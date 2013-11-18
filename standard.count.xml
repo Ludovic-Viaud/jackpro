@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<count>
+    <card value="2">+1</card>
+    <card value="3">+1</card>
+    <card value="4">+1</card>
+    <card value="5">+1</card>
+    <card value="6">+1</card>
+    <card value="7">0</card>
+    <card value="8">0</card>
+    <card value="9">0</card>
+    <card value="10">-1</card>
+    <card value="11">-1</card>
+    <sabot>
+        <precision>0.5</precision>
+        <mode>auto</mode>
+    </sabot>
+    <trueCount>
+        <precision>1</precision>
+        <mode>auto</mode>
+    </trueCount>
+</count>
