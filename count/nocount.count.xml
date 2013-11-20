@@ -10,11 +10,14 @@
     <card value="9">0</card>
     <card value="10">0</card>
     <card value="11">0</card>
-    <sabot>
-        <precision>0.5</precision>
+    <decksRem>
+        <precision>2</precision>
         <mode>auto</mode>
-    </sabot>
+    </decksRem>
     <trueCount>
+        <formula>
+            rawCount / decksRem
+        </formula>
         <precision>1</precision>
         <mode>auto</mode>
     </trueCount>

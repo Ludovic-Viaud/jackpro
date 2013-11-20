@@ -25,10 +25,12 @@ def test_en_action(newSabot):
     for x in range(50):  # @UnusedVariable
         newSabot.draw()
     assert newSabot.decksOut() == 1.0
+    assert newSabot.decksRem() == 5.0
     assert newSabot.cutcarded() == False
     for x in range(52):  # @UnusedVariable
         newSabot.draw()
     assert newSabot.decksOut() == 2.0
+    assert newSabot.decksRem() == 4.0
     assert newSabot.cutcarded() == False
     for x in range(200):  # @UnusedVariable
         newSabot.draw()

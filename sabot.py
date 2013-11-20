@@ -20,3 +20,6 @@ class Sabot :
 
     def decksOut(self) :
         return (len(self._data) - 1 - self._current) / 52
+
+    def decksRem(self):
+        return 6-self.decksOut()
