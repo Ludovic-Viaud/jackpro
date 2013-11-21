@@ -3,7 +3,7 @@ module servant a gérer les fichier de configuration du comptage
 """
 
 import xml.etree.cElementTree as ET
-from discret import discret
+from discret import discret  # @UnusedImport
 from sabot import Sabot
 
 def load(path):
@@ -21,7 +21,21 @@ def load(path):
     result['decksRem_precision'] = eval(decksRem.find('precision').text)
     result['decksRem_mode'] = decksRem.find('mode').text
     trueCount = root.find('trueCount')
-    result['trueCount_formula'] = trueCount.find('formula').text.strip()
+    trueCount_formula = trueCount.find('formula').text.strip()
+    codeOut = []
+    code =  "def calcTrueCount(rawCount, decksRem, countStrat) :" "\n"
+    code += "    decksRem = discret(value = decksRem," "\n"
+    code += "                  precision = countStrat['decksRem_precision']," "\n"
+    code += "                  mode = countStrat['decksRem_mode'])" "\n"
+    for line in trueCount_formula.split('\n'):
+        code += "    " + line + "\n"
+    code += "    trueCount = discret(value = trueCount," "\n"
+    code += "                    precision = countStrat['trueCount_precision']," "\n"
+    code += "                    mode = countStrat['trueCount_mode'])" "\n"
+    code += "    return trueCount" "\n"
+    code += "codeOut.append(calcTrueCount)"
+    exec(code)
+    result['trueCount_formula'] = codeOut[0]
     result['trueCount_precision'] = eval(trueCount.find('precision').text)
     result['trueCount_mode'] = trueCount.find('mode').text
 
@@ -40,16 +54,6 @@ def valide(etree):
     """
     pass
 
-def calcTrueCount(rawCount, decksRem, countStrat) :
-    decksRem = discret(value = decksRem,
-                      precision = countStrat['decksRem_precision'],
-                      mode = countStrat['decksRem_mode'])
-    trueCount = eval(countStrat['trueCount_formula'])
-    trueCount = discret(value = trueCount,
-                        precision = countStrat['trueCount_precision'],
-                        mode = countStrat['trueCount_mode'])
-    return trueCount
-
 def analyze(countStratPath, nbCards):
     # init
     countStrat = load(countStratPath)
@@ -62,11 +66,11 @@ def analyze(countStratPath, nbCards):
         # init boucle
         card = sabot.draw()
         rawResult['nb'] += 1
-        trueCount = calcTrueCount(rawCount = rawCount,
-                                  decksRem = sabot.decksRem(),
-                                  countStrat = countStrat)
+        trueCount = countStrat['trueCount_formula'](rawCount = rawCount,
+                                                    decksRem = sabot.decksRem(),
+                                                    countStrat = countStrat)
 
-        # TODO : enregistrement des resultats
+        # enregistrement des resultats
         if trueCount not in rawResult['trueCount']:
             rawResult['trueCount'][trueCount] = {'nb' : 0, 'groups' : {}}
         rawResult['trueCount'][trueCount]['nb'] += 1
@@ -80,7 +84,7 @@ def analyze(countStratPath, nbCards):
             sabot.shuffle()
             rawCount = 0
 
-    # TODO : preparation des resultats
+    # preparation des resultats
     result = {}
     for key, value in rawResult['trueCount'].items():
         result[key] = {}
@@ -103,4 +107,4 @@ def analyze(countStratPath, nbCards):
 
 
 if __name__ == "__main__" :
-    result = analyze('count/standard.count.xml', 100000)
+    result = analyze('count/standard.count.xml', 1000000)

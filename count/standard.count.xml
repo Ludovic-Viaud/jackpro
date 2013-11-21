@@ -16,7 +16,7 @@
     </decksRem>
     <trueCount>
         <formula>
-            rawCount / decksRem
+            trueCount = rawCount / decksRem
         </formula>
         <precision>1</precision>
         <mode>auto</mode>
