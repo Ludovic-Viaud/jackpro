@@ -103,4 +103,4 @@ def analyze(countStratPath, nbCards):
 
 
 if __name__ == "__main__" :
-    result = analyze('count/standard.count.xml', 1000000)
+    result = analyze('count/standard.count.xml', 100000)
