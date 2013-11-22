@@ -1,25 +1,25 @@
+from copy import copy
 import random
 
 class Sabot :
-    def __init__(self, nbDecks=6, cutcard=52) :
+    def __init__(self, nb, cutcard) :
         self._cutcard = cutcard
-        self._data = (list(range(2, 10)) + [10]*4 + [11]) * 4 * nbDecks
-        self._current = len(self._data) - 1
+        self._save = [x for x in range(2, 10)] + [10]*4 + [11]
+        self._save *= 4*nb
         self.shuffle()
 
     def shuffle(self) :
+        self._data = copy(self._save)
         random.shuffle(self._data)
-        self._current = len(self._data) - 1
 
-    def cutcarded(self) :
-        return self._current < self._cutcard
+    def cutcard(self) :
+        return self._cutcard >= len(self._data)
 
     def draw(self) :
-        self._current -= 1
-        return self._data[self._current+1]
+        return self._data.pop()
 
-    def decksOut(self) :
-        return (len(self._data) - 1 - self._current) / 52
+    def burn(self):
+        self._data.pop()
 
-    def decksRem(self):
-        return 6-self.decksOut()
+    def cardsOut(self) :
+        return len(self._save) - len(self._data)

@@ -14,7 +14,7 @@ def analyze(countStratPath, nbCards):
     rawResult = {}
     rawResult['sabot'] = {}
     rawResult['sabot']['nb'] = 0
-    for x in range(nbCards):  # @UnusedVariable
+    for x in range(nbCards):
         card = sabot.draw()
         rawResult['sabot']['nb'] += 1
         trueCount = countlib.calcTrueCount(rawCount,
@@ -26,13 +26,13 @@ def analyze(countStratPath, nbCards):
         if card not in rawResult['sabot'][trueCount]:
             rawResult['sabot'][trueCount][card] = 0
         rawResult['sabot'][trueCount][card] += 1
-
+        
         rawCount += countStrat[card]
-
+        
         if sabot.cutcard() :
             sabot.shuffle()
             rawCount = 0
-
+    
     return rawResult
 
 if __name__ == "__main__" :
