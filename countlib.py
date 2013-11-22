@@ -3,7 +3,7 @@ module servant a gérer les fichier de configuration du comptage
 """
 
 import xml.etree.cElementTree as ET
-from discret import discret  # @UnusedImport
+import discret  # @UnusedImport
 from sabot import Sabot
 
 def load(path):
@@ -21,23 +21,29 @@ def load(path):
     result['decksRem_precision'] = eval(decksRem.find('precision').text)
     result['decksRem_mode'] = decksRem.find('mode').text
     trueCount = root.find('trueCount')
+    result['trueCount_precision'] = eval(trueCount.find('precision').text)
+    result['trueCount_mode'] = trueCount.find('mode').text
     trueCount_formula = trueCount.find('formula').text.strip()
     codeOut = []
-    code =  "def calcTrueCount(rawCount, decksRem, countStrat) :" "\n"
-    code += "    decksRem = discret(value = decksRem," "\n"
-    code += "                  precision = countStrat['decksRem_precision']," "\n"
-    code += "                  mode = countStrat['decksRem_mode'])" "\n"
+    # def de la fonction
+    code =  "def calcTrueCount(rawCount, decksRem) :" "\n"
+    # round de decksRem
+    for line in discret.texte_discret('decksRem',
+                                      precision = result['decksRem_precision'],
+                                      mode = result['decksRem_mode']):
+        code += "    " + line + "\n"
+    # calcul du trueCount
     for line in trueCount_formula.split('\n'):
         code += "    " + line + "\n"
-    code += "    trueCount = discret(value = trueCount," "\n"
-    code += "                    precision = countStrat['trueCount_precision']," "\n"
-    code += "                    mode = countStrat['trueCount_mode'])" "\n"
-    code += "    return trueCount" "\n"
+    # round de trueCount
+    for line in discret.texte_discret('trueCount',
+                                      precision = result['trueCount_precision'],
+                                      mode = result['trueCount_mode']):
+        code += "    " + line + "\n"
+    # enregistrement du code
     code += "codeOut.append(calcTrueCount)"
     exec(code)
     result['trueCount_formula'] = codeOut[0]
-    result['trueCount_precision'] = eval(trueCount.find('precision').text)
-    result['trueCount_mode'] = trueCount.find('mode').text
 
     return result
 
@@ -67,8 +73,7 @@ def analyze(countStratPath, nbCards):
         card = sabot.draw()
         rawResult['nb'] += 1
         trueCount = countStrat['trueCount_formula'](rawCount = rawCount,
-                                                    decksRem = sabot.decksRem(),
-                                                    countStrat = countStrat)
+                                                    decksRem = sabot.decksRem())
 
         # enregistrement des resultats
         if trueCount not in rawResult['trueCount']:
