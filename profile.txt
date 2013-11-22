@@ -1,225 +1,225 @@
-Fri Nov 22 00:13:59 2013    profile
+Fri Nov 22 00:19:57 2013    profile
 
-         1417223 function calls (1417038 primitive calls) in 6.308 seconds
+         14110771 function calls (14110586 primitive calls) in 65.104 seconds
 
    Ordered by: internal time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    1.085    1.085    6.258    6.258 countlib.py:57(analyze)
-   200000    0.813    0.000    1.498    0.000 .\discret.py:7(discret)
-   119735    0.728    0.000    1.521    0.000 C:\Python33\lib\random.py:215(_randbelow)
-   192972    0.685    0.000    0.685    0.000 {built-in method round}
-   176550    0.625    0.000    0.625    0.000 {method 'getrandbits' of '_random.Random' objects}
-   100000    0.608    0.000    2.106    0.000 <string>:1(calcTrueCount)
-   100000    0.360    0.000    0.856    0.000 .\sabot.py:24(decksRem)
-   100000    0.350    0.000    0.496    0.000 .\sabot.py:21(decksOut)
-      385    0.277    0.001    1.798    0.005 C:\Python33\lib\random.py:253(shuffle)
-   100000    0.233    0.000    0.233    0.000 .\sabot.py:17(draw)
-   100000    0.173    0.000    0.173    0.000 .\sabot.py:14(cutcarded)
-   119735    0.168    0.000    0.168    0.000 {method 'bit_length' of 'int' objects}
-101191/101182    0.148    0.000    0.148    0.000 {built-in method len}
-      106    0.011    0.000    0.011    0.000 {built-in method stat}
+        1   11.270   11.270   65.054   65.054 countlib.py:57(analyze)
+  2000000    8.305    0.000   15.549    0.000 .\discret.py:7(discret)
+  1196417    7.535    0.000   15.648    0.000 C:\Python33\lib\random.py:215(_randbelow)
+  1928852    7.244    0.000    7.244    0.000 {built-in method round}
+  1000000    6.397    0.000   21.946    0.000 <string>:1(calcTrueCount)
+  1766912    6.387    0.000    6.387    0.000 {method 'getrandbits' of '_random.Random' objects}
+  1000000    3.822    0.000    9.004    0.000 .\sabot.py:24(decksRem)
+  1000000    3.673    0.000    5.182    0.000 .\sabot.py:21(decksOut)
+     3847    2.897    0.001   18.551    0.005 C:\Python33\lib\random.py:253(shuffle)
+  1000000    2.442    0.000    2.442    0.000 .\sabot.py:17(draw)
+  1000000    1.798    0.000    1.798    0.000 .\sabot.py:14(cutcarded)
+  1196417    1.727    0.000    1.727    0.000 {method 'bit_length' of 'int' objects}
+1008132/1008123    1.522    0.000    1.522    0.000 {built-in method len}
+     3847    0.034    0.000   18.592    0.005 .\sabot.py:10(shuffle)
+      106    0.010    0.000    0.010    0.000 {built-in method stat}
       301    0.004    0.000    0.006    0.000 <frozen importlib._bootstrap>:74(_path_join)
-      3/2    0.003    0.001    0.006    0.003 {built-in method load_dynamic}
-       77    0.003    0.000    0.021    0.000 <frozen importlib._bootstrap>:1350(find_loader)
-      385    0.003    0.000    1.802    0.005 .\sabot.py:10(shuffle)
+      3/2    0.004    0.001    0.006    0.003 {built-in method load_dynamic}
+       77    0.003    0.000    0.020    0.000 <frozen importlib._bootstrap>:1350(find_loader)
        10    0.003    0.000    0.003    0.000 {built-in method loads}
-     1890    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
+     1946    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
        10    0.002    0.000    0.003    0.000 <frozen importlib._bootstrap>:1029(get_data)
        28    0.002    0.000    0.002    0.000 {built-in method OpenKey}
-       14    0.001    0.000    0.024    0.002 <frozen importlib._bootstrap>:1276(_get_loader)
+       14    0.001    0.000    0.023    0.002 <frozen importlib._bootstrap>:1276(_get_loader)
       297    0.001    0.000    0.001    0.000 {method 'format' of 'str' objects}
        10    0.001    0.000    0.001    0.000 {method 'read' of '_io.FileIO' objects}
-       22    0.001    0.000    0.001    0.000 {built-in method eval}
       313    0.001    0.000    0.001    0.000 <frozen importlib._bootstrap>:484(_verbose_message)
      12/3    0.001    0.000    0.003    0.001 C:\Python33\lib\sre_parse.py:430(_parse)
-      321    0.001    0.000    0.001    0.000 {method 'join' of 'str' objects}
-       16    0.001    0.000    0.028    0.002 <frozen importlib._bootstrap>:1471(_find_module)
+       22    0.001    0.000    0.001    0.000 {built-in method eval}
        18    0.001    0.000    0.001    0.000 {built-in method __build_class__}
+      321    0.001    0.000    0.001    0.000 {method 'join' of 'str' objects}
+       16    0.001    0.000    0.027    0.002 <frozen importlib._bootstrap>:1471(_find_module)
      21/1    0.001    0.000    0.002    0.002 C:\Python33\lib\sre_compile.py:32(_compile)
-     12/1    0.000    0.000    6.308    6.308 {built-in method exec}
+     12/1    0.001    0.000   65.104   65.104 {built-in method exec}
        76    0.000    0.000    0.001    0.000 C:\Python33\lib\sre_parse.py:184(__next)
         2    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1242(_path_hooks)
        10    0.000    0.000    0.009    0.001 <frozen importlib._bootstrap>:933(get_code)
-       45    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:86(_path_split)
-     16/3    0.000    0.000    0.051    0.017 <frozen importlib._bootstrap>:1507(_find_and_load_unlocked)
       196    0.000    0.000    0.000    0.000 {built-in method isinstance}
-        2    0.000    0.000    0.000    0.000 {built-in method listdir}
+     16/3    0.000    0.000    0.050    0.017 <frozen importlib._bootstrap>:1507(_find_and_load_unlocked)
+       45    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:86(_path_split)
       183    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method listdir}
        84    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:131(__getitem__)
-        1    0.000    0.000    0.000    0.000 {built-in method open}
        20    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:415(cache_from_source)
-     10/5    0.000    0.000    0.042    0.008 <frozen importlib._bootstrap>:848(_load_module)
-      135    0.000    0.000    0.000    0.000 {built-in method hasattr}
+        1    0.000    0.000    0.000    0.000 {built-in method open}
        10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:802(_bytes_from_bytecode)
-       94    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1259(_path_importer_cache)
-     28/8    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:141(getwidth)
+      135    0.000    0.000    0.000    0.000 {built-in method hasattr}
+      191    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+     10/5    0.000    0.000    0.042    0.008 <frozen importlib._bootstrap>:848(_load_module)
      53/5    0.000    0.000    0.043    0.009 <frozen importlib._bootstrap>:579(_check_name_wrapper)
+     28/8    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:141(getwidth)
+       94    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1259(_path_importer_cache)
+     16/3    0.000    0.000    0.050    0.017 <frozen importlib._bootstrap>:1557(_find_and_load)
        20    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:794(is_package)
-     16/3    0.000    0.000    0.051    0.017 <frozen importlib._bootstrap>:1557(_find_and_load)
-       58    0.000    0.000    0.001    0.000 C:\Python33\lib\sre_parse.py:209(get)
-      170    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
        18    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:266(_get_module_lock)
-       58    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1457(__exit__)
+       58    0.000    0.000    0.001    0.000 C:\Python33\lib\sre_parse.py:209(get)
         1    0.000    0.000    0.000    0.000 {method '_parse' of 'xml.etree.ElementTree.XMLParser' objects}
+       58    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1457(__exit__)
+     10/5    0.000    0.000    0.042    0.008 <frozen importlib._bootstrap>:534(module_for_loader_wrapper)
        58    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1453(__enter__)
-     10/5    0.000    0.000    0.043    0.009 <frozen importlib._bootstrap>:534(module_for_loader_wrapper)
-       87    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
        16    0.000    0.000    0.000    0.000 {method 'find_loader' of 'zipimport.zipimporter' objects}
+       87    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+       14    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:759(_search_registry)
        36    0.000    0.000    0.000    0.000 {built-in method allocate_lock}
        77    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:34(_relax_case)
-       14    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:759(_search_registry)
-        2    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1394(_fill_cache)
        18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:226(release)
-       14    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:752(_open_registry)
        18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:201(acquire)
-        1    0.000    0.000    0.002    0.002 countlib.py:9(load)
-        1    0.000    0.000    0.023    0.023 C:\Python33\lib\xml\etree\ElementTree.py:59(<module>)
-       18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:181(__init__)
-      4/1    0.000    0.000    0.003    0.003 C:\Python33\lib\sre_parse.py:352(_parse_sub)
+       14    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:752(_open_registry)
+        2    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1394(_fill_cache)
+        1    0.000    0.000    0.022    0.022 C:\Python33\lib\xml\etree\ElementTree.py:59(<module>)
         1    0.000    0.000    0.009    0.009 C:\Python33\lib\random.py:37(<module>)
+       18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:181(__init__)
        76    0.000    0.000    0.000    0.000 {built-in method release_lock}
-       19    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:98(_path_is_mode_type)
+        1    0.000    0.000    0.002    0.002 countlib.py:9(load)
+      4/1    0.000    0.000    0.003    0.003 C:\Python33\lib\sre_parse.py:352(_parse_sub)
        56    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:203(match)
+       19    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:98(_path_is_mode_type)
         3    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:207(_optimize_charset)
-       60    0.000    0.000    0.000    0.000 {built-in method acquire_lock}
        20    0.000    0.000    0.000    0.000 {method 'rsplit' of 'str' objects}
+       60    0.000    0.000    0.000    0.000 {built-in method acquire_lock}
+        1    0.000    0.000   65.104   65.104 countlib.py:3(<module>)
+     10/5    0.000    0.000    0.042    0.008 <frozen importlib._bootstrap>:1017(load_module)
         2    0.000    0.000    0.000    0.000 {built-in method init_builtin}
-     10/5    0.000    0.000    0.043    0.009 <frozen importlib._bootstrap>:1017(load_module)
-       12    0.000    0.000    0.000    0.000 {built-in method is_builtin}
        28    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:127(__len__)
-        1    0.000    0.000    6.308    6.308 countlib.py:3(<module>)
+       12    0.000    0.000    0.000    0.000 {built-in method is_builtin}
        25    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:139(append)
-       52    0.000    0.000    0.000    0.000 {built-in method min}
         9    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:254(_class_escape)
-       42    0.000    0.000    0.000    0.000 {built-in method getattr}
+       52    0.000    0.000    0.000    0.000 {built-in method min}
      18/4    0.000    0.000    0.045    0.011 <frozen importlib._bootstrap>:305(_call_with_frames_removed)
-       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:61(_r_long)
+       14    0.000    0.000    0.023    0.002 <frozen importlib._bootstrap>:1303(find_module)
+       42    0.000    0.000    0.000    0.000 {built-in method getattr}
         3    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:178(_compile_charset)
-        1    0.000    0.000    0.004    0.004 C:\Python33\lib\hashlib.py:53(<module>)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:61(_r_long)
         1    0.000    0.000    0.001    0.001 C:\Python33\lib\xml\etree\ElementTree.py:1715(parse)
+       40    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1024(get_filename)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:258(_mk_bitmap)
-       14    0.000    0.000    0.024    0.002 <frozen importlib._bootstrap>:1303(find_module)
-       14    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap>:774(find_module)
+        1    0.000    0.000    0.004    0.004 C:\Python33\lib\hashlib.py:53(<module>)
        15    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:108(_path_isfile)
        33    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
-       10    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1039(path_stats)
        41    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
-       40    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1024(get_filename)
+       14    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:774(find_module)
         7    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:296(_escape)
-       36    0.000    0.000    0.000    0.000 {built-in method get_ident}
        10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:154(new_module)
-      3/2    0.000    0.000    0.013    0.007 {built-in method __import__}
+       10    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1039(path_stats)
+       36    0.000    0.000    0.000    0.000 {built-in method get_ident}
        14    0.000    0.000    0.007    0.000 <frozen importlib._bootstrap>:1594(_handle_fromlist)
-      5/4    0.000    0.000    0.006    0.002 <frozen importlib._bootstrap>:494(set_package_wrapper)
-       14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:698(find_module)
-     10/5    0.000    0.000    0.043    0.009 <frozen importlib._bootstrap>:995(load_module)
+     10/5    0.000    0.000    0.042    0.008 <frozen importlib._bootstrap>:995(load_module)
+      5/4    0.000    0.000    0.007    0.002 <frozen importlib._bootstrap>:494(set_package_wrapper)
        16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:641(find_module)
+      3/2    0.000    0.000    0.013    0.007 {built-in method __import__}
+       14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:698(find_module)
        21    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:91(__init__)
-        1    0.000    0.000    0.000    0.000 .\discret.py:3(<module>)
-      3/2    0.000    0.000    0.006    0.003 <frozen importlib._bootstrap>:1124(load_module)
        34    0.000    0.000    0.000    0.000 {built-in method ord}
-        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
-       14    0.000    0.000    0.000    0.000 {built-in method is_frozen}
+      3/2    0.000    0.000    0.006    0.003 <frozen importlib._bootstrap>:1124(load_module)
         7    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:357(_simple)
+       14    0.000    0.000    0.000    0.000 {built-in method is_frozen}
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
+       14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1423(<genexpr>)
        10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1011(__init__)
         6    0.000    0.000    0.000    0.000 C:\Python33\lib\hashlib.py:94(__get_openssl_constructor)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\abc.py:129(__new__)
-       14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1423(<genexpr>)
-      5/4    0.000    0.000    0.006    0.002 <frozen importlib._bootstrap>:507(set_loader_wrapper)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:285(_lock_unlock_module)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1330(__init__)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1570(_gcd_import)
         1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x1E2414E8}
+      5/4    0.000    0.000    0.007    0.002 <frozen importlib._bootstrap>:507(set_loader_wrapper)
        18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:280(cb)
-        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1142(is_package)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:1(<module>)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1142(is_package)
         1    0.000    0.000    0.025    0.025 C:\Python33\lib\xml\etree\cElementTree.py:3(<module>)
        24    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:24(_identityfunction)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1570(_gcd_import)
         1    0.000    0.000    0.005    0.005 C:\Python33\lib\re.py:268(_compile)
-        1    0.000    0.000    0.005    0.005 .\sabot.py:4(__init__)
-       10    0.000    0.000    0.000    0.000 {built-in method _fix_co_filename}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\functools.py:35(update_wrapper)
-       18    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:362(_compile_info)
+       10    0.000    0.000    0.000    0.000 {built-in method _fix_co_filename}
+        1    0.000    0.000    0.005    0.005 .\sabot.py:4(__init__)
+       18    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
         1    0.000    0.000    0.005    0.005 C:\Python33\lib\xml\etree\ElementPath.py:59(<module>)
-        1    0.000    0.000    0.001    0.001 C:\Python33\lib\xml\etree\ElementTree.py:1240(parse)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1435(path_hook_for_FileFinder)
         1    0.000    0.000    0.003    0.003 C:\Python33\lib\sre_parse.py:737(parse)
-        1    0.000    0.000    0.005    0.005 C:\Python33\lib\sre_compile.py:486(compile)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:93(seed)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1435(path_hook_for_FileFinder)
        14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1336(<genexpr>)
        12    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:93(seed)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:285(_lock_unlock_module)
-        1    0.000    0.000    0.013    0.013 .\sabot.py:1(<module>)
-        7    0.000    0.000    0.000    0.000 {method 'find' of 'xml.etree.ElementTree.Element' objects}
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:114(_path_isdir)
+        1    0.000    0.000    0.005    0.005 C:\Python33\lib\sre_compile.py:486(compile)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:68(Random)
+        1    0.000    0.000    0.001    0.001 C:\Python33\lib\xml\etree\ElementTree.py:1240(parse)
+        1    0.000    0.000    0.013    0.013 .\sabot.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 .\discret.py:3(<module>)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:149(Element)
         9    0.000    0.000    0.000    0.000 {built-in method setattr}
         3    0.000    0.000    0.000    0.000 {built-in method any}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:68(Random)
-        1    0.000    0.000    0.000    0.000 {function Random.seed at 0x02A81738}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:149(Element)
+        1    0.000    0.000    0.000    0.000 {function Random.seed at 0x02971738}
+        7    0.000    0.000    0.000    0.000 {method 'find' of 'xml.etree.ElementTree.Element' objects}
+       10    0.000    0.000    0.000    0.000 {built-in method max}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1145(<genexpr>)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\abc.py:132(<setcomp>)
         1    0.000    0.000    0.000    0.000 {built-in method urandom}
-       10    0.000    0.000    0.000    0.000 {built-in method max}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:614(ElementTree)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:591(_requires_builtin_wrapper)
         3    0.000    0.000    0.000    0.000 C:\Python33\lib\_weakrefset.py:36(__init__)
-        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1145(<genexpr>)
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1654(__import__)
-        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1120(__init__)
         1    0.000    0.000    0.000    0.000 {built-in method exp}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1654(__import__)
         4    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1120(__init__)
         7    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:135(__setitem__)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:652(load_module)
-        1    0.000    0.000    0.000    0.000 {method 'findall' of 'xml.etree.ElementTree.Element' objects}
-        1    0.000    0.000    0.002    0.002 C:\Python33\lib\sre_compile.py:471(_code)
         2    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:84(closegroup)
+        1    0.000    0.000    0.000    0.000 .\sabot.py:3(Sabot)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:652(load_module)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:85(contextmanager)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:614(ElementTree)
+        1    0.000    0.000    0.002    0.002 C:\Python33\lib\sre_compile.py:471(_code)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:179(__init__)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1488(_sanity_check)
-        1    0.000    0.000    0.000    0.000 {built-in method compile}
-        2    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:73(opengroup)
-        1    0.000    0.000    0.000    0.000 .\sabot.py:3(Sabot)
-        2    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:468(isstring)
+        1    0.000    0.000    0.000    0.000 {method 'findall' of 'xml.etree.ElementTree.Element' objects}
         6    0.000    0.000    0.000    0.000 {built-in method globals}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:567(QName)
-        1    0.000    0.000    0.000    0.000 {method 'union' of 'set' objects}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1511(XMLParser)
+        2    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_compile.py:468(isstring)
+        1    0.000    0.000    0.000    0.000 {built-in method compile}
+        2    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:73(opengroup)
+        1    0.000    0.000    0.000    0.000 {method 'union' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:630(SystemRandom)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1421(TreeBuilder)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1187(_ListDataStream)
+        2    0.000    0.000    0.000    0.000 {built-in method log}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:725(fix_flags)
+        1    0.000    0.000    0.000    0.000 {built-in method openssl_md5}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:145(ExitStack)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:84(__init__)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1736(iterparse)
-        1    0.000    0.000    0.000    0.000 {built-in method openssl_md5}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1421(TreeBuilder)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:145(ExitStack)
-        2    0.000    0.000    0.000    0.000 {built-in method log}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1187(_ListDataStream)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\functools.py:63(wraps)
         1    0.000    0.000    0.000    0.000 {built-in method openssl_sha224}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:725(fix_flags)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\random.py:630(SystemRandom)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\functools.py:63(wraps)
         1    0.000    0.000    0.005    0.005 C:\Python33\lib\re.py:212(compile)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\sre_parse.py:68(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method openssl_sha1}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1265(_IterParseIterator)
         2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:33(_GeneratorContextManager)
         1    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1714(ElementTree)
-        1    0.000    0.000    0.000    0.000 {built-in method openssl_sha256}
-        1    0.000    0.000    0.000    0.000 {built-in method openssl_sha512}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:10(ContextDecorator)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1265(_IterParseIterator)
-        1    0.000    0.000    0.000    0.000 {built-in method openssl_sha1}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:119(closing)
         1    0.000    0.000    0.000    0.000 {built-in method openssl_sha384}
+        1    0.000    0.000    0.000    0.000 {built-in method openssl_sha256}
         1    0.000    0.000    0.000    0.000 {built-in method from_bytes}
-        1    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementPath.py:237(_SelectorContext)
-        1    0.000    0.000    0.000    0.000 {built-in method sqrt}
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:628(getroot)
-        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method openssl_sha512}
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:616(__init__)
-        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:116(ParseError)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\contextlib.py:10(ContextDecorator)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:1714(ElementTree)
+        1    0.000    0.000    0.000    0.000 {built-in method sqrt}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementPath.py:237(_SelectorContext)
         1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\__init__.py:17(<module>)
-        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\__init__.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:116(ParseError)
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\ElementTree.py:628(getroot)
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 C:\Python33\lib\xml\etree\__init__.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
 
 
